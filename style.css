@@ -95,7 +95,7 @@ body {
 
 #sidebar {
   height: 100%;
-  translate: 0;
+  translate: -100%;
   position: fixed;
   z-index: 1;
   top: 0;
