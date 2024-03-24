@@ -17,7 +17,6 @@ output.innerHTML = slider.value + "°"; // Display the default slider value
 slider.oninput = function () {
   output.innerHTML = this.value + "°";
   grid_container.style.transform = "rotate(" + this.value + "deg)";
-  console.log(this.value + "°"); // Log the slider value to the console
 };
 
 slider.parentNode.insertBefore(output, slider.nextSibling);
@@ -32,9 +31,6 @@ gridItem.forEach(function (element) {
   });
 });
 
-for (i = 0; i < gridItem.length; i++) {
-  console.log("grid on :" + (i + 1));
-}
 
 menu.addEventListener("click", function () {
   sidebar.style.translate = "0";
@@ -50,7 +46,6 @@ document.addEventListener("click", function (event) {
     event.target !== closebtn &&
     event.target !== hamburger
   ) {
-    console.log("click" + event.target);
     sidebar.style.translate = "-100%";
   }
 });
@@ -59,8 +54,6 @@ document.addEventListener("click", function (event) {
 function gridColor(c) {
   for(i=0;i<gridItem.length;i++){
     gridItem[i].style.border =`5px solid ${c}`
-    console.log("sucessfully change")
-    console.log(gridItem[i].style.border)
   }
 }
 
