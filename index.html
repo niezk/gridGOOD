@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GRID IS MORE</title>
+  </head>
+
+  <aside id="sidebar">
+    <div class="sidemenu">
+      <a id="btn-close"> <img src="./x.svg" /> </a>
+<!-- 
+      <a href="#" class="submenu">Columns</a>
+      <input type="number" placeholder="0" id="columns" />
+
+      <a href="#" class="submenu">Rows</a>
+      <input type="number" placeholder="0" id="rows" /> -->
+
+      <a href="#" class="submenu">Color</a>
+
+      <input type="text" placeholder="#fffff" id="color" />
+
+      <h2 class="asdsac"><span class="asdas">Code by</span> <span>astron00not</span></h2>
+    </div>
+  </aside>
+  <div id="menu">
+    <img src="./menu.svg" id="hamburger-menu" />
+  </div>
+
+  <body>
+    <div class="grid" id="grid">
+      <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
+    </div>
+
+    <!-- Input deg-->
+    <div class="slider-container">
+      <input
+        type="range"
+        min="0"
+        max="360"
+        value="180"
+        class="slider"
+        id="mySlider"
+      />
+      <div class="text-value"></div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
